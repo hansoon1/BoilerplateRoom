@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />    
+    <title>Boilerplate Room</title>    
+</head>
+<body>
+    
+
+    
+    <div id="output">Click somewhere on the page.</div>        
+    <div class="rectangle" id="rectangle" oncontextmenu ="editText(id); return false;" ondblclick="paste(id)"><span></span></div>      
+    <div class="resizable-div" id="resizableDiv" contenteditable="true" oninput="resizeDiv()" ondblclick="paste(id)">This is the first line.\nThis is the second line.</div>
+    <!-- <div class="resizable-div" id="resizableDiv" contenteditable="true" oninput="resizeDiv()">Test</div> -->
+
+
+    <script src="app.js"></script>
+    
+
+
+</body>
+</html>
