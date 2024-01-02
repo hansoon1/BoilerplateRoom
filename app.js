@@ -21,17 +21,8 @@ document.addEventListener('click', function(event) {
   output.innerHTML = 'Clicked at X: ' + x + ', Y: ' + y;
 
   // 네모 상자 위치 설정
-  rectangle.style.left = x - rectangle.offsetWidth / 2 + 'px';
-  rectangle.style.top = y - rectangle.offsetHeight / 2 + 'px';
-
-  // 클립보드에서 텍스트 읽기
-//   navigator.clipboard.readText().then(function(text) {
-//     // 네모 상자 안에 클립보드의 텍스트 표시
-//     var span = rectangle.querySelector('span');
-//     span.textContent = text;
-//  });
-    //  var span = rectangle.querySelector('span');
-    //  span.textContent = "!@#$%^";
+  rectangle.style.left = x - 8 + 'px';
+  rectangle.style.top = y - 8 + 'px';
 
   // 네모 상자 표시
   rectangle.style.display = 'flex';
@@ -73,6 +64,7 @@ document.addEventListener('click', function(event) {
     dummyDiv.style.visibility = 'hidden';
     dummyDiv.style.position = 'absolute';
     dummyDiv.style.whiteSpace = 'pre-line';
+    dummyDiv.style.padding = 8 + 'px';
     dummyDiv.style.font = window.getComputedStyle(document.body).font;
 
     dummyDiv.textContent = text;
